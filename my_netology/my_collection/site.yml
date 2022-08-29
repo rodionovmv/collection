@@ -1,0 +1,9 @@
+---
+- name: Test my_own_module
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Execute module
+      my_own_module:
+        path: "/tmp/test.txt"
+        content: "Test module in task\nHello, netology!\n"
